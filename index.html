@@ -2,10 +2,105 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Mon premier site</title>
+  <title>Unaya – Your Way to Health</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+      color: #333;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-weight: normal;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      margin-bottom: 40px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 15px 25px;
+      border-radius: 50px;
+      font-weight: bold;
+      color: white;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .instagram { background: #e1306c; }
+    .facebook { background: #1877f2; }
+    .email { background: #00b894; }
+    .whatsapp { background: #25d366; }
+
+    footer {
+      font-size: 0.9em;
+      opacity: 0.8;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>🎉 Ça marche !</h1>
-  <p>Site remis à zéro avec GitHub Pages.</p>
+  <div class="container">
+    <h1>🌈 Unaya</h1>
+    <h2>Your way to health</h2>
+
+    <div class="card">
+      <p>
+        Bienvenue 🌿  
+        Unaya vous accompagne vers plus de bien-être, d’équilibre et de joie.
+        Et si vous pouviez voir où va votre énergie chaque jour ?
+        Unaya vous aide à suivre vos activités et à comprendre l’équilibre entre ce qui vous ressource et ce qui vous épuise.
+        Visualisez votre “Unaya” – votre unité de soi – et découvrez comment vos habitudes influencent votre bien-être.
+        Ajustez vos choix, reprenez la main sur votre quotidien et avancez, pas à pas, vers une vie plus harmonieuse.
+        Unaya : devenez acteur de votre énergie !
+      </p>
+
+      <p>
+        👉 Contactez-nous ou suivez-nous sur les réseaux :
+      </p>
+
+      <div class="buttons">
+        <a class="btn instagram" href="https://instagram.com/" target="_blank">Instagram</a>
+        <a class="btn facebook" href="https://facebook.com/" target="_blank">Facebook</a>
+        <a class="btn email" href="mailto:contact@unaya-yourwaytohealth.fr">Email</a>
+      </div>
+    </div>
+
+    <footer>
+      © 2025 – Unaya® • Your Way to Health
+    </footer>
+  </div>
 </body>
 </html>
