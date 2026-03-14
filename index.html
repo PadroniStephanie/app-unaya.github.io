@@ -72,13 +72,49 @@
     }
 
     .instagram { background: #e1306c; }
-    .facebook { background: #1877f2; }
     .email { background: #00b894; }
 
     footer {
       font-size: 0.9em;
       opacity: 0.8;
     }
+  <style>
+
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+</style>
+  .btn {
+    padding: 15px;
+  }
+
+  /* FORMULAIRE CONTACT */
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  input, textarea {
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    background: #f7f7f7;
+  }
+
+  textarea {
+    min-height: 120px;
+  }
+
+  input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #ff9a9e;
+  }
+
   </style>
 </head>
 
@@ -118,7 +154,7 @@
       <div class="buttons">
         <a class="btn instagram" href="https://instagram.com/unaya_yourwaytohealth" target="_blank" rel="noopener noreferrer">Instagram</a>
         <div class="card">
-  <h3>Contact</h3>
+  <h3>💌 Contactez-nous</h3>
 
   <form action="https://formspree.io/f/https://formspree.io/f/mdawdvqg" method="POST">
 
@@ -126,29 +162,17 @@
 
     <input type="email" name="email" placeholder="Votre email" required>
 
-    <textarea name="message" placeholder="Votre message" required></textarea>
+    <textarea name="message" placeholder="Votre message..." required></textarea>
 
-    <button class="btn email" type="submit">Envoyer</button>
+    <!-- anti spam -->
+    <input type="text" name="_gotcha" style="display:none">
+
+    <button class="btn email" type="submit">Envoyer le message</button>
 
   </form>
+
 </div>
-        form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
 
-input, textarea {
-  padding: 12px;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  font-size: 16px;
-}
-
-textarea {
-  min-height: 120px;
-}
-       
     <footer>
       © 2025 – Unaya® • Your Way to Health
     </footer>
