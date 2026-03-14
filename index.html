@@ -116,11 +116,39 @@
       <p>👉 Contactez-nous ou suivez-nous :</p>
 
       <div class="buttons">
-        <a class="btn instagram" href="https://instagram.com/unaya-yourwaytohealth" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a class="btn email" href="mailto:contact@unaya-yourwaytohealth.fr" target="_blank" rel="noopener noreferrer">Email</a>
-      </div>
-    </div>
+        <a class="btn instagram" href="https://instagram.com/unaya_yourwaytohealth" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <div class="card">
+  <h3>Contact</h3>
 
+  <form action="https://formspree.io/f/https://formspree.io/f/mdawdvqg" method="POST">
+
+    <input type="text" name="name" placeholder="Votre nom" required>
+
+    <input type="email" name="email" placeholder="Votre email" required>
+
+    <textarea name="message" placeholder="Votre message" required></textarea>
+
+    <button class="btn email" type="submit">Envoyer</button>
+
+  </form>
+</div>
+        form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 120px;
+}
+       
     <footer>
       © 2025 – Unaya® • Your Way to Health
     </footer>
